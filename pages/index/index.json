@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "my-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview",
+    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell",
+    "swipe-left": "/components/swipe-left/swipe-left"
+  }
+}

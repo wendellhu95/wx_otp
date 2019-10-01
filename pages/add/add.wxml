@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page__bd">
+    <mp-cells title="账户名称">
+      <mp-cell>
+        <view>账户名称</view>
+        <view slot="footer">
+          <input value="{{ title }}" type="text" placeholder="默认使用签发者名称" maxlength="30" focus="true">
+          </input>
+        </view>
+      </mp-cell>
+    </mp-cells>
+    <mp-cells title="账户信息（不可更改）">
+     <mp-cell>
+        <view>密钥</view>
+        <view slot="footer">{{ accountToAdd.secret }}</view>
+      </mp-cell>
+      <mp-cell>
+        <view>签发者</view>
+        <view slot="footer">{{ accountToAdd.issuer }}</view>
+      </mp-cell>
+    </mp-cells>
+  </view>
+  <view class="page__ft">
+    <button type="primary" bindtap="onAdd">
+      添加
+    </button>
+  </view>
+</view>

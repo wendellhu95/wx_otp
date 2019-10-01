@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="page__bd">
+    <progress wx:if="{{ accounts.length }}" percent="{{ secondsLeft * 100 / 30 }}"/>
+    <mp-cells wx:if="{{ accounts.length }}" ext-class="my-cells" title="所有账户">
+      <swipe-left wx:for="{{ accounts }}" wx:key="{{ item.secret }}" id="account-{{ index }}" bindedit="onEdit" binddelete="onDelete">
+        <mp-cell id="{{ index }}" bindtap="onCellTap">
+          <view>{{ item.title }}</view>
+          <view slot="footer">{{ codes[index] }}</view>
+        </mp-cell>
+      </swipe-left>
+    </mp-cells>
+  </view>
+  <view class="page__ft">
+    <button type="primary" bindtap="scanQRCode">
+      添加账户
+    </button>
+    <text class="info-text">扫描两步验证二维码添加账户</text>
+  </view>
+</view>

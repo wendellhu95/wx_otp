@@ -1,0 +1,10 @@
+/**index.wxss**/
+.info-text {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #b2b2b2;
+}
+
+mp-cell {
+  width: 100%;
+}

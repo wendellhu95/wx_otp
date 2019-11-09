@@ -19,7 +19,7 @@ exports.default = Component({
     // 可以往左拖动的最大距离,同时它也是组件的初始x坐标，此时菜单不可见
     openWidth: {
       type: Number,
-      value: 150
+      value: 80
     },
     // 菜单是否打开了，true表示打开，false表示关闭
     open: {

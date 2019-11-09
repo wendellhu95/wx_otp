@@ -2,7 +2,7 @@
   <view class="page__bd">
     <progress wx:if="{{ accounts.length }}" percent="{{ secondsLeft * 100 / 30 }}"/>
     <mp-cells wx:if="{{ accounts.length }}" ext-class="my-cells" title="所有账户">
-      <swipe-left wx:for="{{ accounts }}" wx:key="{{ item.secret }}" id="account-{{ index }}" bindedit="onEdit" binddelete="onDelete">
+      <swipe-left wx:for="{{ accounts }}" wx:key="{{ item.secret }}" id="account-{{ index }}" binddelete="onDelete">
         <mp-cell id="{{ index }}" bindtap="onCellTap">
           <view>{{ item.title }}</view>
           <view slot="footer">{{ codes[index] }}</view>

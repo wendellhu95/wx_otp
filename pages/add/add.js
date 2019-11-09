@@ -39,7 +39,7 @@ function handleAdd(res, data) {
   res = JSON.parse(res.data || '[]');
   res.push({
     title: data.title || data.accountToAdd.issuer,
-    secret: data.accountToAdd.secret,
+    secret: data.accountToAdd.secret.toUpperCase(),
     issuer: data.accountToAdd.issuer
   });
   console.log(res);
